@@ -4,9 +4,9 @@ export const userLogin = async (email, password, stayLogged) => {
 
     try{
         if(stayLogged){
-            await FirebaseApp.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+            await FirebaseApp.auth().setPersistence(FirebaseApp.auth.Auth.Persistence.LOCAL);
         }else{
-            await FirebaseApp.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
+            await FirebaseApp.auth().setPersistence(FirebaseApp.auth.Auth.Persistence.SESSION);
         }
         return await FirebaseApp.auth().signInWithEmailAndPassword(email.replace(/\s/g, '') , password.replace(/\s/g, ''));
     }catch (e){
