@@ -1,21 +1,19 @@
 import React from 'react';
 import './App.css';
+import Layout from "./Layout";
 import UserHome from "./pages/UserHome";
 
-import Home from './pages/Home'
-
-import Layout from './Layout'
 function App() {
-  return (
-    <div>
-      <Layout>
+    return (
+        <div>
+            <Layout>
 
 
-        <UserHome/>
+                <UserHome/>
 
-      </Layout>
-    </div>
-  );
+            </Layout>
+        </div>
+    );
 }
 
 export default App;
