@@ -51,7 +51,7 @@ class UserHome extends Component{
     render() {
         return(
             <Container>
-                <Row className={"p-3"}>
+                <Row className={"p-3 mb-0"}>
                     <Col xs={8} md={8}>
                         <h4>User</h4>
                     </Col>

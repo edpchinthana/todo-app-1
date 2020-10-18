@@ -5,8 +5,6 @@ export default function Login() {
 
     return (
         <div className = "login">
-            <header>Todo-List App</header>
-
             <p className="p1">Welcome Back!</p>
 
             <p className="p2">SIGN IN</p>
